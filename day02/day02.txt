@@ -1,0 +1,60 @@
+HTML 파일의 확장자명은 :파일명.html
+Alt+L+O : 실행
+
+<태그> :for이벤트 처리
+div: 빈 박스, 하나의 구역
+
+p: 한 줄 단위, 위 아래 공간이 생긴다
+
+span
+:단어 단위 (특정 구간을 분간)
+
+b, strong: 강조, 굵은 폰트
+
+h1~6 : 제목태그, 폰트크기, 굵기, 위아래공간, 숫자가 내려갈수록 커진다.
+
+em, i   :폰트 기울기
+mark: 형광
+del: 가운데 밑줄
+ins: 밑줄
+sup, sub: 위 ,아래 첨자
+
+br: 줄 바꿈, 개행
+
+%nbsp;  :띄어쓰기
+
+&lt, %gt : <>
+
+input
+    type
+        1. text
+        2. password
+        3. button
+        4. checkbox
+        5. radio
+
+    속성(ooo="", attribute, attr) 
+        1.placeholder
+        2.required
+        3.readonly
+        4.value
+        5.name 
+
+select
+-하위의  <option>..옵션명 </option>을 활용하여 목록 생성
+-하위 옵션을 선택하면 그것이 select의 value가 된다
+
+ label : 묶어주는 단위
+
+ button: 버튼
+
+ a (href, target)
+ :링크 페이지 이동
+
+ img(src,alt)
+ : 이미지 태그
+
+ alt
+-해당 페이지의 설명
+-이미지가 뜨지 않았을 때 대체 되는 글
+-쓰지 않는다면 스크린 리더를 고려하지 않는것
