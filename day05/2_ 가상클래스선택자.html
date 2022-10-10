@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list>li:first-child{color:forestgreen;}
+        .list>li:last-child{color:deepskyblue;}
+        .list>li:nth-child(2){color:darkviolet;}
+        .list>li:nth-child(1){font-weight: bold;}
+        .list>li:nth-child(3){color:deeppink}; 
+        .list>li:nth-child(odd){background-color:rosybrown;}
+        .list>li:nth-child(even){background-color:rosybrown;}
+
+        /* nth()안에 n이 들어가면 0,1,2...정수가 들어가 계산*/
+        .list>li:nth-child(3n+1){
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>가상 클래스 선택자</h2>
+    <ul class="list">
+        <li>가가</li>
+        <li>나나</li>
+        <li>다다</li>
+        <li>라라</li>
+        <li>마마</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성선택자2</title>
+    <style>
+        /* 1 : 독립  */
+        [title="css"]{
+            color: red;
+        
+        }
+        /* 1 4 5 : 독립+공백으로 연결 */
+        [title ~="css"]{
+            color: blue;
+        
+        }
+        /* css들어간것 모두 */
+        [title *="css"]{
+            color: palegoldenrod;
+        
+        }
+         /* 전부 */
+         [title *="css"]{
+            color: plum;
+        
+        }
+        /* 독립+공백으로연결된 */
+        [title $="css"]{
+            color: aqua;
+        
+        }
+        /* 독립+하이픈 */
+        [title |="css"]{
+            color: gold;
+        
+        }
+        /* css로 시작(접미사빼고) */
+        [title ^="css"]{
+            color: orange;
+        
+        }
+    </style>
+</head>
+<body>
+    <h2>속성 선택자 -2 </h2>
+    <p title="css">1 독립적인 단어</p>
+    <p title="css-funny">2 하이픈이 들어간 합성어</p>
+    <p title="css_funny">3 언더버가 들어간 합성어</p>
+    <p title="fuuny css">4 공백으로 연결된 합성어(접미사)</p>
+    <p title="css funny">5 공백으로 연결된 합성어(접두사)</p>
+    <p title="funnycss">6 공백이 없는 합성어(접미사)</p>
+    <p title="cssfunny">7 공백이 없는 합성어(접두사)</p>
+</body>
+</html>

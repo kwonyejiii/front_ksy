@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소 선택자</title>
+    <style>
+        ul>li{
+            display: inline-block; /*가로화*/
+            list-style: none;
+        }
+
+        #login::before{
+            content: "📃";
+        }
+        /* 이모티콘: 윈도우 + ; */
+
+        #sign::after{
+            content: "🔒";
+        }
+        #sign::before{
+            content: "|";
+        }
+        a {
+            text-decoration: none;  /*밑줄없앰*/
+        }
+        /* a태그에 link가 걸려있다면 */
+        a:link {
+            color: lightblue;
+        }
+         /* a태그에 마우스올리면*/
+        a:hover {
+            color:magenta
+        }
+        /* a태그가 눌렸다면*/
+        a:active{
+            color:#000;
+        }
+        /* a태그 누른후*/
+        a:visited{
+            color:antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="login">로그인</li>
+        <li id="sign">회원가입</li>
+    </ul>
+    <!-- 클릭시 네이버로이동 -->
+    <a href="https://www.naver.com/" target="_blank">아직 아이디가 없으세요?</a>
+    <a href="https://www.daum.net/">다음으로 이동</a>
+    
+</body>
+</html>
