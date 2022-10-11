@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css배경2</title>
+    <style>
+        /* 그냥디브 */
+        div{
+            width: 60%;
+            height :200px;
+            border :3px dotted deeppink;
+            padding: 10px;
+            background-image: url(./img/cat.png);
+            background-repeat: no-repeat;
+        }
+        /* 이미지 나오는 위치(잘안씀) */
+
+        /* 오른쪽밑에가 나옴 */
+        .bg1{
+            background-position: right bottom;
+        }
+        .bg2{
+            background-position: center;
+        }
+        .bg3{
+            background-position: 10% 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>css배경2</h2>
+    <div class="bg1">
+        <h2>background-position1</h2>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut dolore quod recusandae inventore illo libero nihil minus, saepe nesciunt necessitatibus quaerat vitae asperiores earum esse quisquam facilis? Eveniet, illum?
+    <div class="bg2">    
+        <h2>background-position2</h2>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut dolore quod recusandae inventore illo libero nihil minus, saepe nesciunt necessitatibus quaerat vitae asperiores earum esse quisquam facilis? Eveniet, illum?
+    <div class="bg3">    
+        <h2>background-position3</h2>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aut dolore quod recusandae inventore illo libero nihil minus, saepe nesciunt necessitatibus quaerat vitae asperiores earum esse quisquam facilis? Eveniet, illum?
+
+    </div>
+</body>
+</html>
