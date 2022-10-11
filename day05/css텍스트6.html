@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css텍스트6</title>
+    <style>
+        .content{
+            border: 30x solid #f00;
+            width: 400px;
+            padding :10px;
+            /* white-space:normal;: 연속된 공백은 하나의 공백으로 채워집니다. 가로의 오른쪽 끝에 닿으면 
+                                    자동으로 줄 바꿈 합니다. */
+                                    
+            white-space: nowrap;  /*공백과 줄바꿈을 처리: 1. nowrap:공백을 채우지만 가로 폭의 오른쪽 끝에서 줄 바꿈을 하지않고 박스 벗어나 표시됩니다.
+                                                         (2. pre:  연속 공백 허용)*/
+            overflow: hidden;  /*스크롤을 보이지 않게한다*/
+            text-overflow: ellipsis; /* 말줄임표(...)*/
+        }
+
+        .content:hover {
+            overflow:  visible;
+        }
+    </style>
+</head>
+<body>
+    <h2>css텍스트6</h2>
+    <p class="content"></p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur libero repellendus cum adipisci eveniet porro deserunt repellat harum. Nam quod aspernatur minus vel. Dicta sed aut asperiores error quam ducimus?
+    </p>
+</body>
+</html> 
