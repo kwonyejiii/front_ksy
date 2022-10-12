@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class 선택자</title>
+    <!-- 부모 클래스 스타일이 자식까지 적용됨 -->
+    <style>
+        .redText{ color: red;}
+        .blueText{ color: blue;}
+        .bigText{font-size: 50px;}
+
+    </style>
+</head>
+<body>
+    <h2>클래스 선택자</h2>
+    <p>
+        <!--class선택자: 클래스 2개적용가능(id는 불가능) -->
+        <span  class="redText bigText">클래스 선택자는</span >/은<span class="blueText">특정 집단의 여러 요소를 한번에 선택</span>할 때 사용합니다
+    </p>
+    <div class="bigText">
+        <!-- 전체적용말고 따로 주면 변경됨 -->
+        <span class="redText">특정 집단을 클래스(class)</span>라고 하며, <span class="blueText">. 기호를 사용</span>하여 같은 클래스 이름을 가지는 요소들을 모두 선택합니다.
+    </div>
+</body>
+</html>
+<!-- 우선순위 id -->
