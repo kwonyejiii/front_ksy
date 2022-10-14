@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h2태그 안에 타이틀이 있어? */
+        h2[title]{
+        text-align: center;
+        }
+        /* 모든 href 태그 */
+        [href]{
+            text-decoration: none;
+        }
+
+        .attr{
+            background-color: brown;
+        }
+        /* 클래스가 attr이면  */
+        [class="attr"]{
+            color: white;
+        }
+        
+        /* 인풋타입이 버튼이면 */
+        input[type=button]{
+            background-color: red;
+
+        }
+        /* a 태그의 하이퍼링크가 다음이면 */
+        a[href="https://www.daum.net/"]{
+            background-color: deepskyblue;
+        }
+    </style>
+    
+</head>
+<body>
+    <h2 title="제목">제목</h2>
+    <p>
+        <a href="https://www.naver.com/">네이버</a>
+        <a href="">링크</a>
+    </p>
+    <p class="attr">속성명</p>
+
+    <p>
+        <a href="https://www.daum.net/">다음</a>
+        <a href=""></a>
+    </p>
+    <input type="text"/> <input type="button" value="버튼"/>
+</body>
+</html>

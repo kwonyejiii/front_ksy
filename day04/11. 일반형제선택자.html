@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- 몇몇개빼고 스타일적용하고싶을때 사용 -->
+
+    <style>
+        /*둘째*/
+        h3 + p {
+           font-weight: bold;
+        }
+        /*h3밑의 모든 형제p들 : 둘째~넷째 */
+        h3 ~ p {
+            color:blue ;
+            font-size: 30px;
+        }
+        /*h3의 첫번째형제 p이후의 모든형제p들 적용 :3,4,7째*/
+        h3 + p ~ p {
+            background-color: gold;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>인접 형제 선택자</h2>
+    <div>
+        <h3>첫째</h3>
+        <p>둘째</p>
+        <p>셋째</p>
+        <p>넷째</p>
+        <h4>다섯째</h4>
+         <a href="#">여섯째</a>  <!--하이퍼링크, p가 아니니 스타일적용인됨 -->
+        <p>일곱째</p>
+    </div>
+</body>
+</html>
