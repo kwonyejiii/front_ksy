@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid deeppink;
+            padding: 10px;
+            margin:20px;
+            border-radius: 20px;
+        }
+        img{
+            border: 1px solid deepskyblue    
+        }
+        /* =자식은 block */
+        #block img{display: block;}
+
+        .ib{
+            border: 3px solid deeppink;
+            width: 100px;
+            height: 100px;
+            margin:10px;
+        }
+
+        span.ib{
+            display: block;
+        }
+
+        span.ib{
+            display: inline;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>디스플레이</h2>
+    <div id="inline">
+        <img src="./sea1.png" alt="바다">
+        <img src="./sea2.png" alt="바다">
+        <img src="./sea3.png" alt="바다">
+    </div>
+    <div id ="block">
+        <img src="./sea1.png" alt="바다">
+        <img src="./sea2.png" alt="바다">
+        <img src="./sea3.png" alt="바다">
+    </div>
+    <hr>
+    <span class="ib"></span>
+    <span class="ib"></span>
+    <span class="ib"></span>
+    <hr>
+    <div class="ib"></div>
+    <div class="ib"></div>
+    <div class="ib"></div>
+</body>
+</html>
