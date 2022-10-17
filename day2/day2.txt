@@ -1,4 +1,3 @@
-
 CSS 2D
     transform
         이차원 좌표에서 요소를 변형시키는 속성
@@ -7,9 +6,8 @@ CSS 2D
 
     linear-gradient
         background : linear-gradient(방향, 색상1, 색상2)
-        방향은 생략이 가능하며 생략 시에는 벤더 프리픽스도 생략 가능cd
+        방향은 생략이 가능하며 생략 시에는 벤더 프리픽스도 생략 가능
         방향에 가로방향 (left,right)을 작성시에는 벤더 프리픽스를 반드시 작성해 주어야함
-
 
     벤더 프리픽스 (vendor prefix)
         주요 웹 브라우저 공급자가 (safari, ie, chrome...) 새로운 실험적인 기능을 제공할 때
@@ -21,7 +19,7 @@ CSS 2D
         IE : -ms-
         chrome, safari : -webkit-
         Firefox : -moz-
-----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 
 transition
     요소에 추가할 css 스타일의 전환효과를 설정
@@ -29,15 +27,13 @@ transition
 
     eg)
     transition: property timing-function duration delay
-    
+
     -property : 요소에 추가할 전환효과의 전용 속성을 설정
-    
+
     -timing-function : 전환 효과의 변화되는 속도값을 설정
         linear : 일정한 속도
         ease : 전환효과가 변화하면서 변환( 천천히 -빠르게-천천히)
         (ease-in ease-out ease-in-out)
-    
+
     -duration : 전환 효과의 걸리는 시간 설정
     -delay : 전환 효과의 대기시간 설정
-
-    
