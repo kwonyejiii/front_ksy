@@ -9,7 +9,7 @@ CSS 2D
         background : linear-gradient(방향, 색상1, 색상2)
         방향은 생략이 가능하며 생략 시에는 벤더 프리픽스도 생략 가능cd
         방향에 가로방향 (left,right)을 작성시에는 벤더 프리픽스를 반드시 작성해 주어야함
-.
+
 
     벤더 프리픽스 (vendor prefix)
         주요 웹 브라우저 공급자가 (safari, ie, chrome...) 새로운 실험적인 기능을 제공할 때
