@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear2</title>
+    <style>
+    /* li가 부모ul을 벗어날때 해결CSS (float라고 다 붙여주는건아니니까, float를 자식으로갖으면 부모높이 인식못하니까) */
+
+                 /* 방법2. float이 있는 부모태그에 display: flow-root; */
+        ul{
+            padding: 15px 20px;
+            background-color: silver;
+            display: flow-root;
+        }
+        
+                 /*☆ 방법1. 가상요소선택자-float이 있는 부모태그에 after사용한 후  clear: both;
+                            content: ""; display: block; clear: both;    */
+        /* ul:after {
+            content: "";
+            display: block;
+            clear: both;
+        } */
+      
+
+
+        ul > li{
+            float: left;
+            margin: 5px;
+            padding: 5px 10px;
+            background-color: pink;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <li>float1</li>
+    <li>float2</li>
+    <li>float3</li>
+</body>
+</html>

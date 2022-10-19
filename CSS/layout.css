@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#Wrap {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+header, 
+section, 
+article, 
+aside, 
+footer {
+    padding: 20px;
+    border : 1px solid gray;
+}
+header {
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+}
+
+section {
+    width: 700px;
+    height : 420px;  /*안에content가 넘치면 height없애거나 조정*/
+    float :left;  
+    background-color:  ghostwhite;
+    margin-bottom: 20px;
+}
+
+aside{
+    width: 200px;
+    height : 420px;
+    float :right;    
+    background-color:  aliceblue;
+}
+footer{
+    background-color: whitesmoke;
+    clear: both;
+}

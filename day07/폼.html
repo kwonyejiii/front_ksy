@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            box-sizing: border-box;
+            width: 100%;
+            padding:10px 20px;
+            background-color: ivory;
+            margin: 5px 0;
+        }
+        input[type=text]{
+            border-radius: 15px;
+            color: deeppink;
+        }
+        /* 클릭시 */
+        input[type=text]:focus{
+            background-color: lavenderblush;
+            outline:none;
+        }
+        input[type=password]{
+            border:none;
+            border-bottom: 3px solid hotpink;
+        }
+        input[type=password]:focus{
+            border:none;
+            border-bottom: 3px dashed red;
+        }
+    
+        select{
+            border: 2px solid yellowgreen;
+            width: 100px;
+            box-sizing: border-box;
+            padding:10px;  /*패딩가능*/
+            margin:10px;
+            font-weight: bold;  /*선택되면 굵은글씨로 */
+        }
+        /*입력창*/
+        textarea{
+            box-sizing: border-box;
+            width: 100px;
+            height: 200px;
+            font-size: 16px;
+            resize: none;
+        }
+        input[type=button], input[type=reset], input[type=submit]{
+            width: 100px;
+            background-color: powderblue;
+            color: black;
+            border: none;  /*x면 검정테두리 생김*/
+            cursor:pointer;  
+        }
+    </style>
+
+</head>
+<body>
+    <from action="">
+        <p>아이디: <input type="text" placeholder="아이디를 입력하세요" required/></p>
+        <p>비밀번호: <input type="password" placeholder="비밀번호를 입력하세요" required/></p>
+        <p>
+            직업
+            <select>
+                <option>교사</option>
+                <option>강사</option>
+                <option>의사</option>
+                <option>판사</option>
+                <option>학생</option>
+                <option>주부</option>
+                <option>사무직</option>
+                <option>기타</option>
+            </select>
+            
+        </p>
+        <p>
+            <input type="submit" value="회원가입"/>
+            <input type="reset" value="다시작성"/>
+            <input type="button" value="돌아가기"/>
+        </p>
+    
+    
+    
+    
+    </from>
+    
+</body>
+</html>

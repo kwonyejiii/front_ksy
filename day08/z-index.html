@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <!-- 클수록 위에 위치
+    왼쪽위 기준 -->
+    <style>
+        div#wrapper {
+            position:relative;
+            border: 1px solid black;
+            height: 500px;
+        }
+        div.box{
+            position:absolute;
+            border: 1px solid red;
+            height: 200px;
+            width: 200px;
+        }
+        #b1{
+            left:50px;
+            top:50px;
+            background-color: darkorange;
+            z-index: 1;
+        }
+        
+        #b2{
+            left:100px;
+            top:100px;
+            background-color: deepskyblue;
+            z-index: 2;
+        }
+        #b3{
+            background-color: orange;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <h2>z-index</h2>
+    <div id="wrapper">
+        <div class="box" id="b1"></div>
+        <div class="box" id="b2"></div>
+        <div class="box" id="b3"></div>
+    </div>
+</body>
+</html>

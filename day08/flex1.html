@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-1</title>
+    <style>
+        
+        #container{
+            width: 1000px;
+            height: 500px;
+            margin: 0 auto;
+            border: 3px solid red;
+            display: flex; /* FLEX로 수평정렬-부모에 주기*/
+           /* flex-wrap: wrap;  1000px에 400px가 3개들어갈수 없으니 하나는 내려감(넘겨줌)*/
+           /* flex-wrap: wrap-reverse;  위로 넘김*/
+           flex-direction: column;   /*flex의 방향을 설정 - row,column */
+
+        }
+        #container > div {
+            width: 400px;
+            /*높이안적음 = 부모따름(스트레cl)*/
+            border: 3px solid black;
+            background-color: gold;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>flex-1</h2>
+    <div id="container">
+        <div id="container">
+            <div><h2>1</h2></div>
+            <div><h2>2</h2></div>
+            <div><h2>3</h2></div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼센트 크기</title>
+    
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html, body{
+            width: 100%;
+            height: 100%;
+            position: relative;   /*=>⭐기준이 됨!!*/
+            /* align-items: center; */
+        }
+        #container1{
+            width: 100%;
+            height: 5%;
+            background-color:slategray;
+            opacity: 0.8;
+        }
+        #container2{
+            width: 30%;
+            height: 90%;
+            background-color: oldlace;
+            opacity: 0.8;
+            display: flex;  /*가운데정렬*/
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        .box{
+            width: 49%;
+            height: 33%;
+            background-color: bisque;
+        }
+
+        /* 전체의 50% */
+        #container3{
+            width: 50%;
+            height: 10px;
+            background-color: red;
+            margin: 0 auto;  /*가운데정렬*/
+        }
+        /* 전체의 50%의 50% */
+        .box-2{
+            width: 50%;
+            height: 10px;
+            background-color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>퍼센트 크기</h2>
+    <div id="container1">1</div>
+    <div id="container2">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div id="container3">
+        <div class="box-2"></div>
+    </div>
+</body>
+</html>

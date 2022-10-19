@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .realative1{
+        width: 200px;
+        background-color: deeppink;
+        padding: 20px;
+        margin-left: 50px;
+       }
+        /*부모요소*/
+       .realative2{
+        width: 400px;
+        height: 200px;
+        background-color: deepskyblue;
+        padding: 20px;
+
+        position: relative;
+
+        margin:20px;
+        top:20px;      /*왼쪽부터시작, 위에서 20px만큼 떨어져있다*/
+        left:100px
+       }
+       /*자식요소(부모에 영향받음!)*/
+       .realative2 > div {
+        width: 400px;
+        height: 20%;
+        border: 3px dashed blue;
+        margin: 0 auto;  /* 가운데정렬 */
+       }
+
+    </style>
+</head>
+<body>
+    <h2>상대위치지정방식</h2>
+    <div class="relative1"></div>
+    <div class="relative2">
+        상대 위치 지정방식2
+        <div>자식 div</div>
+    </div>
+</body>
+</html>

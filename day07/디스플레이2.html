@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: hotpink;
+            border : 3px solid blue;
+            margin-bottom: 20px;
+        }
+        p.none{
+            /* display: none -> 공간차지x   eg) 모달창,메뉴..*/ 
+            display: block;
+        }
+        p.hidden{
+            /* visibility:hidden; -> 공간은 차지! */
+            visibility: visible;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>디스플레이2</h2>
+    <div>
+        <p>display 속성값을 none으로 설정</p>
+        <p class="none">display 속성값을 none으로 설정</p>
+    </div>
+    <div>
+        <p>display 속성값을 none으로 설정</p>
+        <p class="hidden">display 속성값을 hidden으로 설정</p>
+    </div>
+</body>
+</html>

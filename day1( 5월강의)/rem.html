@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rem 크기</title>
+    <style>
+        /* body{font-size: 30px;} --> <h2>rem 크기</h2>만 변화함!!!
+                                    rem의 경우 원래부터 해당 요소의 font-size를 무시*/
+         html{font-size: 30px;} 
+        .rem{font-size: 1.5rem;} /* = 15px (10px x 1.5)*/
+    </style>
+</head>
+<body>
+    <h2>rem 크기</h2>
+    <div style="font-size: 10px;">
+        <p class=rem>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptatibus, tenetur, quos quam sed, ex id vitae soluta quisquam tempora aliquid esse illo fugit vel. Assumenda repudiandae iusto harum blanditiis.
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* pc: 1024 */
+        body{
+            background-color: yellow;
+            color: blue;
+            font-size: 32px;
+        }
+        /*모바일*/
+        /*= ~1024px일떄 까지만 적용*/
+        /* 0~1024 */
+        @media screen and (max-width: 1024px){
+            body{
+                background-color: azure;
+                color: slategray;
+                font-size: 20px;
+            }
+          /* 786~1024 */  
+        @media screen and (min-width:786px) and (max-width: 1024px){
+                body{
+                background-color: black;
+                color: slategray;
+                font-size: 20px;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>미디어쿼리1</h2>
+</body>
+</html>

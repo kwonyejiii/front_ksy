@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-2</title>
+    <style>
+        h2,h2,p{
+            text-align: center;    
+        }
+
+        .wrapper{
+            border: 3px solid red;
+            width: 500px;
+            margin: 0 auto;
+            display: flex;
+        }
+        /* 자손 : 밑에 모든 div*/
+        .wrapper div{
+            border: 2px solid black;
+            width: 100px;
+            background-color: blanchedalmond;           
+        }
+        /* justify-content: flex-end; => 끝을 마지막으로 수평정렬*/
+        #container1{
+            justify-content:  flex-start;
+        }
+        #container2{
+            justify-content:  flex-end;
+        }
+        /*⭐*/
+        #container3{
+            justify-content:  center;
+        }
+        /*❤️
+        <가운데 정렬>
+        1.  margin: 0 auto;
+        2.  text-align: center;  
+        3.  justify-content: center;
+        4.  align-items: center;
+        */
+
+        /* 거의 justify-content:  space-between; 주고 마진줌 */
+        #container4{
+            justify-content:  space-between;
+        }
+
+        #container5{
+            justify-content:  space-around;
+        }
+        #container6{
+            justify-content:  space-evenly;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>flex-2</h2>
+    <h3>justify-content : flex- start</h3>
+    <div class="wrapper" id="container1">
+        <div><p>1</p></div>
+        <div><p>2</p></div>
+        <div><p>3</p></div>
+    </div>
+
+    <h3>justify-content : flex- end</h3>
+    <div class="wrapper" id="container2">
+        <div><p>1</p></div>
+        <div><p>2</p></div>
+        <div><p>3</p></div>
+    </div>
+
+    <h3>justify-content : flex- center</h3>
+    <div class="wrapper" id="container3">
+        <div><p>1</p></div>
+        <div><p>2</p></div>
+        <div><p>3</p></div>
+    </div>
+
+    <h3>justify-content : space-between</h3>
+    <div class="wrapper" id="container4">
+        <div><p>1</p></div>
+        <div><p>2</p></div>
+        <div><p>3</p></div>
+
+    <h3>justify-content : space-around</h3>
+    <div class="wrapper" id="container5">
+        <div><p>1</p></div>
+        <div><p>2</p></div>
+        <div><p>3</p></div>
+    </div>
+
+    <h3>justify-content : space-evenly</h3>
+    <div class="wrapper" id="container6">
+            <div><p>1</p></div>
+            <div><p>2</p></div>
+            <div><p>3</p></div>
+    </div>
+</body>
+</html>

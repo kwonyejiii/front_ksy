@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Wrap{
+    width: 100%;
+    background-color: cornsilk;
+}
+
+header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav > ul {
+    height: 50px;
+    list-style: none;
+    color: white;
+}
+
+nav > ul > li {
+    float: left;
+    padding: 10px;
+    margin: 5px 5px 5px 0px;
+    font-size: 1rem;
+}
+
+@media screen and (min-width:320px){
+    nav, #container{
+        width: 310px;
+        margin: 0 auto;
+    }
+
+    #intro > img{
+        width: 80%;
+        padding: 10px;
+    }
+
+    #desc{
+        width: 100%;
+        padding: 20px;
+        background-color: aquamarine;
+        line-height: 1.5;
+        font-size: 1rem;
+    }
+
+    footer{
+        width: 100%;
+        height: 75px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        line-height: 55px;
+    }
+
+    footer > p {
+        text-align: center;
+    }
+    
+
+/* 핸드폰 */
+@media screen and (min-width :320px) {
+    nav, #container {
+        width: 310px;
+        margin: 0 auto;
+    }
+
+    #intro > img {
+        width: 80%;
+        padding:10px;
+    }
+    #desc{
+        width: 100%;
+        padding: 20px;
+        background-color: aquamarine;
+        line-height:  1.5;
+        font-size:  1rem;
+    }
+    footer{
+        width: 100%;
+        height: 75px;
+        padding:10px;
+        background-color: rgba(0,0,0, 0.5); 
+        color:white;
+        line-height: 55px;
+
+    }
+    footer > p {
+        text-align: center;
+    }
+
+    /* 태블릿 */
+ @media screen and (min-width :768px) {
+        nav, #container {
+            width: 750px;
+        }
+        #intro{
+            width: 100%;
+        }
+        #intro > img {
+            width: 20%;
+        }
+        #desc{
+            width: 100%;
+            padding: 10px;
+            margin: 10px auto;
+        }
+        footer{
+            height: 70px;
+            padding:20px;
+            background-color: royalblue; 
+            line-height: 35px;
+    
+        }
+       
+    /* 데스크탑 */
+@media screen and (min-width :1024px) {
+    nav, #container {
+        width: 1000px;
+    }
+
+    #intro > img {
+        width: 15%;
+        float: left;
+    }
+    #desc{
+       display: inline-block;
+       width: 400px;
+       border: 3px dashed black;
+       margin-bottom: 20px; 
+    }
+    footer{
+        clear: both;
+        height: 100px;
+        padding: 40px;
+        line-height: 20px;
+        background-color: steelblue;
+    }
+    
+
+        }
+    }
+}
