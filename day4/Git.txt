@@ -26,7 +26,7 @@ Git 시작하기
     2. https://git-scm.com/downloads <-- 이동
     3. 좌측에 downloads
     4. 운영체제에 맞는거 다운로드
-    5. 무지성 다음
+    5. 무지성 다음.
 
 Git 명령어 
     1. git init
