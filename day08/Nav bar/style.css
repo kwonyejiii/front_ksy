@@ -1,0 +1,23 @@
+body{
+    margin: 0;   /*스페이싱 제거*/
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.nabar{
+    display: flex;  /*한줄나란히 */
+    justify-content: space-between;  /*같은중심축: 사이사이 스페이스*/
+    align-items: center;  /*수직적 중간만들기(반대축이라 align-items)*/
+    background-color: #263343;
+    padding: 8px 12px;/*위,양옆 (양모서리 너무 붙어있어서)*/
+}
+
+.nabar{
+    font-size: 24px;
+    color: white;
+}
+
