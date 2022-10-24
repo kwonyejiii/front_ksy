@@ -8,24 +8,27 @@
 <style>
 .box{
         box-sizing: border-box;
-        border: 1px solid #000000;
+        border: 1px solid #000000;  /*rgb (투명도..)/16진수/black..*/
         margin-top: 100px;
         margin-left: 100px;
         padding: 20px;
         height: 80px;
+
+        animation: moving 3s infinite alternate;  /*두번 반복, infinite:무한반복*/ 
         /*
         name: moving (애니메이션 이름)
         duration : 3s (얼마동안)
         count  : infinite(몇 회 반복)
-        direction alternate (왕복과 편도)
-
-        normal :완료 후 초기 상태로
-        alternate : 한번 끝까지 하고 반대로 진행
-        reverse : 프레임을 거꾸로 진행
+        direction : alternate (왕복과 편도)
+                    - normal :완료 후 초기 상태로
+                    - alternate : 한번 끝까지 하고 반대로 진행
+                    - reverse : 프레임을 거꾸로 진행
         */
 
     }
+    /* 총 3초 */
     @keyframes moving{
+        /* 0초 */
         from{
             width: 170px;
             background-color: ghostwhite;
@@ -33,6 +36,7 @@
             opacity: 0.5;
             transform:  scale(0.5) rotate(30deg);
         }
+         /* 1.5초. */
         50%{
             width: 300px;
             background-color: honeydew;
@@ -40,6 +44,7 @@
             opacity: 1;
             transform:  scale(01) rotate(-15deg); 
         }
+        /* 3초 */
         100%{
             width: 300px;
             background-color:  honeydew;
