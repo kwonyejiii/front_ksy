@@ -1,0 +1,127 @@
+#container
+header,
+section,
+footer {
+    width: 100%;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+header> h1{
+    text-align: center;
+    font-size:  3em;
+}
+
+section h2{
+    position: absolute;
+    padding: 5px; 
+    font-size: 2em;
+    right: 3%;
+    bottom: 10px;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+section > div{
+    width: 32%;   /*⭐*/
+    /* display: flex; */
+    position: relative;
+    height: 400px;
+    margin-bottom: 15px;
+    border:  1px solid black;
+
+}
+
+#menu1{
+    background: url(../img/dish1.jpg) no-repeat center;
+    background-size: cover;
+}
+#menu2{
+    background: url(../img/dish2.jpg) no-repeat center;
+    background-size: cover;  
+}
+#menu3{
+    background: url(../img/dish3.jpg) no-repeat center;
+    background-size: cover;
+}
+#menu4{
+    background: url(../img/dish4.jpg) no-repeat center;
+    background-size: cover;
+}
+#menu5{
+    background: url(../img/dish5.jpg) no-repeat center;
+    background-size: cover;
+    /* <사진크기 조정>
+    1. width: 65%;
+    2. flex-grow: 1        -- 차지하는영역
+        (margin-left: 1%;) */
+}
+footer{
+    background-color: black;
+    height: 100px;
+}
+
+footer > p {
+    font-size:  1.5em;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* 작은 모바일부터 */
+@media  screen and (min-width:767px){
+    #menu1,
+    #menu2,
+    #menu3,
+    #menu4{
+        width: 100%;
+    }
+}
+
+@media  screen and (min-width:768px ) and (max-width :1024px){
+    #menu1,
+    #menu2,
+    #menu3,
+    #menu4 {
+        width: 49%;
+    }
+    #menu5{
+        width: 100%;
+    }
+}
+/*  and (max-width :1024px) 또는
+
+ @media  screen and (min-width:768px ){
+    #menu1,
+    #menu2,
+    #menu3,
+    #menu4,
+    #menu5 { 
+    width: 32%;
+    }
+  } */
+
+  /*  모바일꺼만 따로 주고싶은 경우
+
+ @media  screen and (min-width:1000px ){
+    #menu1,
+    #menu2,
+    #menu3,
+    #menu4,
+    #menu5 { 
+    width: 32%;
+    }
+    #menu5{
+        flex-grow: 1        -- 차지하는영역
+        margin-left: 1.7%;
+  } */
+ 

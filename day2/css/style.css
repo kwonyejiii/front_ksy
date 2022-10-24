@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'twyair';
+    src: url();
+    font-weight: normal;
+    font-style: normal;
+}
+/* 초기화 */
+*{
+    margin:  0;
+    padding: 0;
+}
+
+body{
+    font-family: "twyair";
+}
+#container{
+    width:  100%;
+    margin: 0 auto;
+}
+/* margin 은 background 처럼 단축속성이다.
+때문에 margin : top&bottom, left & right 처럼 두 개의 value로 표현할 수 있다.
+
+auto 값은 브라우저가 남은너비 의 공간을 계산하여 좌우 균등하게 배분해 준다.
+left & right의 value를 auto로 설정했다면,
+element는 지정된 width 만큼 공간을 차지하며, 남은 공간은 균등하게 나뉘어 좌,우 margin이 갖게 된다.
+
+⭐그래서 auto를 적용하기 이전에 요소의 width가 정의 되어 있어야 한다. */
+
+nav{
+    height: 50px;
+    background-color: black;
+}
+
+nav>ul {
+    list-style: none;
+    padding: 3px;
+}
+nav>ul>li {
+    display: inline-block;
+    margin: 15px 20px;
+}
+
+a{text-decoration: none;}
+
+a:link, 
+a:visited {
+    color: white;
+}
+
+a:active, 
+a:hover {
+    color: yellow
+}
+
+header{
+    width: 100%;;
+    height: 300px;
+    background: url(../img/header.jpg) no-repeat / cover;   
+    /* https://rgy0409.tistory.com/2994 */
+    opacity: 0.8;
+}
+.photo{
+    display: none;
+}
+section{
+    position: relative;
+    width: 100%;
+    padding: 15px 30px4;
+}
+.page_title{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding: 30px 50px;
+}
+.page_title > h1{
+    margin-bottom:  30px;
+}
+.content{
+    margin: 80px auto 10px;
+    width: 90%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#container section :nth-child(odd){
+    background-color: gold;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    opacity: 0.8;
+}
+footer>p {
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* https://electronic-moongchi.tistory.com/90 */
