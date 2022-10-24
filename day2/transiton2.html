@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition2</title>
+    <style>
+        h2{
+            text-align:center ;
+        }
+        #container{
+            width: 800px;
+            height :400px;
+            margin: 0 auto;
+            border-radius: 30px;
+            border: 5px solid black;
+            padding: 30px;
+
+        }
+        .box{
+            width: 140px;
+            height :140px;
+            margin: 0 auto;
+            background-color: pink;
+            margin-bottom: 50px;
+            font-size: 20px;
+        }
+        p{
+            text-align: center;
+            line-height: 130px;
+            font-weight: bold;  /*700 (nomal: 400px;)*/
+        }
+        /*  #container를 클릭했을때 .box만 */
+        #container:hover > .box{
+            transform: rotate(720deg); /*숫자커지면 빠르게감*/
+            margin-left: 650px;
+        }
+        #no-delay{
+            /* transition-property: all;
+            transition-timing-function:  linear;   
+            transition-duration: 3s;   -> 생략가능*/
+            transition: 3s;
+
+            /* transition: all linear 3s;  한번에 쓰기 */
+        }
+        #delay{
+            transition-delay: 1s;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>transition2</h2>
+    <div id="container">
+        <div class="box" id="no-delay">
+            <p>☆*: .｡. o(≧▽≦)o .｡.:*☆</p>
+        </div>
+        <div class="box" id="delay">
+            <p>(❁´◡`❁)(❁´◡`❁)</p>
+        </div>
+    </div>
+</body>
+</html>

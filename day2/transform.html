@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>transition</title>
+    <style>
+        body{
+            margin-left: 100px
+        }
+        p{
+            width: 400 px;
+            padding: 15px;
+            border: 30x solid navy;
+        }
+        #trans1{
+            background-color: deeppink;
+            transform: translate(30px,30px); /* x,y축 으로이동=> hover시 많이 사용함!!!*/
+        }
+        #trans2{
+            background-color: aquamarine;
+            transform: rotate(60deg);  /* ~도 회전*/
+        }
+        #trans3{
+            background-color: skyblue;
+             transform: translate(1.5, 1.2);   /*x,y축 ~배 만큼 커짐 */
+        }
+        #trans4{
+            background-color: gold;
+            transform: skew(30deg,15deg) /* 비뚤게 */
+        }
+        #gradient{
+            /* 3개 다 배경색 */
+            background-color: cyan;
+            background:  linear-gradient(azure, cyan);  /*그라데이션*/
+            background:  linear-gradient(   
+                 to bottom left,   /*top, transparent(갈수록 투명)..  */
+                red 50%, black 10%, cyan 14%
+                ); /*그라데이션 방향,퍼센트*/
+                background: redial-gradient(red,black); /*안에 레드 밖에 블랙*/
+        }
+        
+        
+    </style>
 </head>
 <body>
-    
+    <h2>transition</h2>
+    <p>ordiginal</p>
+    <p id="trans1">translate</p>
+    <p id="trans2">rotate</p>
+    <p id="trans3">scale></p>
+    <p id="trans4">skew</p>
+    <p id="gradient">gradient</p>
 </body>
 </html>

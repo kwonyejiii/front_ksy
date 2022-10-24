@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#Wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    color: #000000;
+    opacity: 0.5;
+}
+nav{
+    width: 700; 
+    margin: 0 auto;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    color: #ffffff;
+    justify-content: space-between ;
+    margin: 0 auto;
+}
+#container {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: lightgray;
+}
+.flex{
+    display: flex;
+}
+
+#main_banner_flex{
+    justify-content:space-between;
+    align-items: flex-start; 
+    height: 500px;
+}
+/*  여기에 display: flex;대신 .flex{ 를 주면됨! */
+#section_1{
+    width: 49%;  /*섹션위치가 안나오네? 섹션차지공간 만들기*/
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+article{
+    width:  49%;  /*패딩있으니 49%*/
+    height: 150px;
+    background-color: gray;
+}
+
+#loginBox{
+    width: 49%;
+    background-color: #ffffff;
+}
+#section_2{
+    width: 100%; 
+    height: 300px;
+    background-color: gray;
+}
+#footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    opacity: 0.8;
+}

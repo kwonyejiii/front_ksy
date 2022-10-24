@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: px;
+            height :px;
+            margin: px;
+            border: 1x solid black ;
+            }
+        #bg_tr{
+        background-color: coral;
+        transition:  background-color linear 2s;   /*2초동안 서서히  일정한 속도fh 배경색상변경*/
+        }
+        #bg_tr:hover{
+            background-color: navy;     /* hover시 2초동안 서서히 배경색상변경*/
+            border : 5px dotted red;  /*테두리는 바로생김*/           
+        }
+
+
+        #border_tr{
+            background-color: springgreen;
+            border : 10px dotted deeppink;
+            transition: all ease 2s;    /*2초동안 전환효과가 변화하면서 변환*/        
+        }
+        #border_tr:hover{
+            background-color: indianred;
+            border : 10px dotted powderblue;
+            border-radius: 50%;        
+        }
+    </style>
+</head>
+<body>
+    <h2>transition1</h2>
+    <div id="bg_tr"></div>
+    <div id="border_tr"></div>
+</body>
+</html>
