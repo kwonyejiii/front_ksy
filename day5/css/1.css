@@ -1,0 +1,17 @@
+#menu{
+    background-color: antiquewhite;
+    display: flex;
+    visibility: hidden;
+    transition:  all 1s ease;
+    list-style: none;
+    justify-content: space-around;
+    width: 40vw;
+}
+/* #hover가 hover가 되면 #menu를 ~로 바꾼다 */
+#hover:hover + #menu {
+    visibility: visible;
+   width: 100vw;    
+}
+/* vh 와 vw 는 열려있는 화면 전체의 상대길이이기 때문에 스크롤바를 포함한 길이를 반환합니다!
+반면에 % 는 창이 중심이 아닌, %를 쓰고 있는 요소의 부모 요소의 길이에 맞게 반환합니다.
+또한, 그냥융
