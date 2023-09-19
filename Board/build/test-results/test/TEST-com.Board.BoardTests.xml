@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.Board.BoardTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-19T10:40:59" hostname="LAPTOP-HQIR4Q31" time="1.012">
+  <properties/>
+  <testcase name="delete()" classname="com.Board.BoardTests" time="1.012"/>
+  <system-out><![CDATA[19:40:43.941 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+19:40:43.970 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+19:40:44.059 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.Board.BoardTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+19:40:44.096 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.Board.BoardTests], using SpringBootContextLoader
+19:40:44.106 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.Board.BoardTests]: class path resource [com/Board/BoardTests-context.xml] does not exist
+19:40:44.108 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.Board.BoardTests]: class path resource [com/Board/BoardTestsContext.groovy] does not exist
+19:40:44.108 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.Board.BoardTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:40:44.110 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.Board.BoardTests]: BoardTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:40:44.239 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.Board.BoardTests]
+19:40:44.468 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\wldp1\Downloads\Board\build\classes\java\main\com\Board\BoardApplication.class]
+19:40:44.475 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.Board.BoardApplication for test class com.Board.BoardTests
+19:40:44.878 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.Board.BoardTests]: using defaults.
+19:40:44.880 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+19:40:44.947 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@24b52d3e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15deb1dc, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6e9c413e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@57a4d5ee, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5af5def9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3a45c42a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@36dce7ed, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@47a64f7d, org.springframework.test.context.event.EventPublishingTestExecutionListener@33d05366, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@27a0a5a2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7692cd34, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@33aa93c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@32c0915e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@106faf11, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@70f43b45]
+19:40:44.959 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@3d526ad9 testClass = BoardTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@e041f0c testClass = BoardTests, locations = '{}', classes = '{class com.Board.BoardApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@502f1f4c, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@75ed9710, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@19fb8826, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@556d0826, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2c88b9fc, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@2205a05d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.15)
+
+2023-09-19 19:40:46.272  INFO 14796 --- [    Test worker] com.Board.BoardTests                     : Starting BoardTests using Java 11.0.18 on LAPTOP-HQIR4Q31 with PID 14796 (started by wldp1 in C:\Users\wldp1\Downloads\Board)
+2023-09-19 19:40:46.278  INFO 14796 --- [    Test worker] com.Board.BoardTests                     : No active profile set, falling back to 1 default profile: "default"
+2023-09-19 19:40:48.566  INFO 14796 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-19 19:40:48.722  INFO 14796 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 1 JPA repository interfaces.
+2023-09-19 19:40:49.105  WARN 14796 --- [    Test worker] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.Board]' package. Please check your configuration.
+2023-09-19 19:40:50.975  INFO 14796 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-19 19:40:51.178  INFO 14796 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-09-19 19:40:51.813  INFO 14796 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-09-19 19:40:52.218  INFO 14796 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-19 19:40:52.845  INFO 14796 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-19 19:40:52.915  INFO 14796 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-19 19:40:54.550  INFO 14796 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-19 19:40:54.578  INFO 14796 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-19 19:40:59.400  INFO 14796 --- [    Test worker] com.Board.BoardTests                     : Started BoardTests in 14.344 seconds (JVM running for 19.266)
+Hibernate: 
+    select
+        board0_.id as id1_0_0_,
+        board0_.content as content2_0_0_,
+        board0_.created_date as created_3_0_0_,
+        board0_.delete_yn as delete_y4_0_0_,
+        board0_.hits as hits5_0_0_,
+        board0_.modified_date as modified6_0_0_,
+        board0_.title as title7_0_0_,
+        board0_.writer as writer8_0_0_ 
+    from
+        board board0_ 
+    where
+        board0_.id=?
+Hibernate: 
+    select
+        board0_.id as id1_0_0_,
+        board0_.content as content2_0_0_,
+        board0_.created_date as created_3_0_0_,
+        board0_.delete_yn as delete_y4_0_0_,
+        board0_.hits as hits5_0_0_,
+        board0_.modified_date as modified6_0_0_,
+        board0_.title as title7_0_0_,
+        board0_.writer as writer8_0_0_ 
+    from
+        board board0_ 
+    where
+        board0_.id=?
+Hibernate: 
+    /* delete com.Board.entity.Board */ delete 
+        from
+            board 
+        where
+            id=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
